@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link href="css/mainCSS.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <main>
+        <article>
+            <header>
+                <h1>Porfolio</h1>
+                <p>by Ruri Nakamura</p>
+                <a href="ポートフォリオ企画書.pdf" target="_blank">ポートフォリオ企画書</a>
+            </header>
+            <!--about me-->
+                <div id="section1">
+                        <!--人物像-->
+                            <p id="p1">
+                            <b>人物像</b><br>
+                            <a href="./zinbutsu.html"><img src="人物像.png" alt="人物像" height="100px" width="100px" title="人物像"></a><br>
+                            北海道釧路市出身<br>
+                            カメラとヨガが趣味<br>
+                          </p>
+                        <!--研究-->
+                            <p id="p2">
+                            <b>研究</b><br>
+                            <a href="./kenkyu.html"><img src="研究.png" alt="研究" height="100px" width="100px" title="研究"></a><br>
+                            卒論：モンゴルの耕作地の土壌劣化評価<br>
+                            修論：海岸植生4種のCO2交換を測定<br>
+                            </p>
+                        <!--事務職-->
+                            <p id="p3">
+                            <b>事務</b><br>
+                            <a href="./job.html"><img src="事務.png" alt="事務" height="100px" width="100px" title="事務"></a><br>
+                            土木ゼネコンに向けたアウトソーシング<br>
+                            主に事務業務を担当<br>
+                            </p>
+                        <!--プログラミング-->
+                            <p id="p4">
+                            <b>プログラミング</b><br>
+                            <a href="./programing.html"><img src="プログラミング.png" alt="プログラミング" height="100px" width="100px" title="プログラミング"></a><br>
+                            プログラミングの職業訓練を受講<br>
+                            HTML/CSS、JAVA、Python...<br>
+                            </p>
+                        </div>  
+            <!--制作物-->
+            <div id="section2">
+                <h1>Products</h1>
+                    <!--勤怠管理アプリ-->
+                    <p id="p1">
+                    <b>勤怠管理アプリ</b><br>
+                    <a href="勤怠管理企画書.pdf" target="_blank">勤怠管理企画書</a><br>
+                    <a href="○○"><img src="○○" alt="勤怠管理アプリ"></a><br>
+                    勤務時間から給与を計算<br>
+                    </p>
+                    <!--業務状況共有アプリ-->
+                    <p id="p2">
+                    <b>業務状況共有アプリ</b><br>
+                    <a href="○○"><img src="○○" alt="業務状況共有アプリ"></a><br>
+                    チームメンバーの<br>
+                    業務進捗・納品状況を共有<br>
+                    </p>
+                    <!--コーディネートお手伝いアプリ-->
+                    <p id="p3">
+                    <b>コーディネートお手伝いアプリ</b><br>
+                    <a href="○○"><img src="○○" alt="コーディネートお手伝いアプリ"></a><br>
+                     クローゼットの中から<br>
+                    1週間のコーディネートを決める<br>
+                    </p>
+                </div>
+            <!--お問い合わせフォーム-->
+            <div id="section3">
+                <h1>Contact</h1>
+                <form action="#" method="POST">
+                <label for="name">
+                    お名前<br>
+                    <input type="text" name="name" id="name" placeholder="Your name..." required>
+                </label><br>
+                <label for="mailAddress">
+                    メールアドレス<br>
+                    <input type="email" name="mailAddress" id="mailAddress" placeholder="Your Email Address..." required>
+                </label><br>
+                <label for="message">
+                    内容<br>
+                    <textarea name="message" id="message" cols="50" rows="5" placeholder="Your Message..." required>
+                    </textarea>
+                </label><br>
+                <button type="submit">確認</button>
+                </form>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p>Portfolio</p>
+        <p>&copy;2024 中村瑠莉</p>
+    </footer>
+</body>
+</html>

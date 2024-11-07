@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+article{
+  width: 100%;
+  display: flex;
+  margin: 10px;/*上下左右外余白10px*/
+  font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+}
+.side{
+  width: 15%;
+}
+.content{
+  width: 85%;
+  margin: 0 10px;/*外枠上下間隔を0、左右を10px*/
+  padding: 0px 10px;/*上下内余白0px,左右10px*/
+  border:2px solid;/*外枠2px*/
+  border-radius: 3%;/*角を丸める*/
+}
+/*サイドバーの書式設定===================*/
+.PortfolioH{
+  margin: 0 2px;/*外枠上下間隔を0、左右を2px*/
+  padding: 5px 2px;/*上下内余白5px,左右2px*/
+  background-color: #ffcc99;
+  border:2px solid;/*外枠2px*/
+  border-color: #ff9900;
+}
+.PortfolioLi{
+  margin: 0 2px;/*外枠上下間隔を0、左右を2px*/
+  padding: 5px 2px;/*上下内余白5px,左右2px*/
+  border:2px solid;/*外枠2px*/
+  border-color: #ff9900;
+  list-style:none ;
+}
+.profileH{
+  margin: 0 2px;/*外枠上下間隔を0、左右を2px*/
+  padding: 5px 2px;/*上下内余白5px,左右2px*/
+  background-color: #ccff99;
+  border:2px solid;/*外枠2px*/
+  border-color: #00ff66;
+}
+.profileLi{
+  margin: 0 2px;/*外枠上下間隔を0、左右を2px*/
+  padding: 5px 2px;/*上下内余白5px,左右2px*/
+  border:2px solid;/*外枠2px*/
+  border-color: #00ff66;
+  list-style:none ;
+}
+.ProductsH{
+  margin: 0 2px;/*外枠上下間隔を0、左右を2px*/
+  padding: 5px 2px;/*上下内余白5px,左右2px*/
+  background-color: #ccffff;
+  border:2px solid;/*外枠2px*/
+  border-color: #99ccff;
+}
+.ProductsLi{
+  margin: 0 2px;/*外枠上下間隔を0、左右を2px*/
+  padding: 5px 2px;/*上下内余白5px,左右2px*/
+  border:2px solid;/*外枠2px*/
+  border-color: #99ccff;
+  list-style:none ;
+}
+
+/*メインコンテンツの書式設定===================*/
+/*マーカを非表示*/
+.timeline{
+    list-style:none ;
+}
+/*年代の間隔*/
+.timeline > li{
+    margin-bottom: 60px;
+}
+
+.timeline > li{
+    overflow: hidden;/*枠からはみ出した文章は隠す*/
+    margin: 0;/*外枠上下間隔を0*/
+    position: relative;/*相対位置*/
+}
+.timeline-date {
+    width: 110px;/*横幅110px*/
+    float: left;/*文章中、左に配置*/
+    margin-top: 20px;/*外枠上、20pxあける*/
+  }
+  .timeline-content {
+    width: 75%;/*横幅75%*/
+    float: left;/*文章中、左に配置*/
+    border-left: 3px gray solid;/*左に縦線を配置*/
+    padding-left: 30px;/*左内枠、30pxあける*/
+  }
+  .timeline-content:before {/*timeline-contentの前に配置する〇*/
+    content: '';/*timeline-contentの前に何も配置しない*/
+    width: 15px;/*横幅12px*/
+    height: 15px;/*縦幅12px*/
+    background: #3399ff;
+    position: absolute;
+    left: 104px;/*左から104pxに配置*/
+    top: 28px;/*上から28pxに配置*/
+    border-radius: 100%;/*角を丸める*/
+  }
+  /*吹き出し
+  ==============================*/
+  .css-fukidashi {
+    padding-left: 30px;/*左内枠、30pxあける*/
+    margin: 0;
+    position: relative;
+    display: inline-block;/*横に並べる*/
+  }
+  .text {
+    width: 100px;/*横幅100px*/
+    margin:5px 10px;/*外余白上下5px、左右10px*/
+    padding: 10px;/*内余白10px*/
+    text-align: center;/*中央に配置*/
+    border: 3px solid #3399ff;/*外枠*/
+    border-radius: 15%;/*角を丸める*/
+  }
+  .fukidashi {
+    display: none;/*基本非表示*/
+    width: 130px;/*横幅文字数に合わせて*/
+    position: absolute;
+    top: -130px;/*textから150px上の位置*/
+    left: 50px;/*textから50px左の位置*/
+    padding: 16px;/*内余白16px*/
+    border-radius: 5px;/*角を丸める*/
+    background: #3399ff;
+    color: #fff;
+    font-weight: bold;
+    font-size: 13px;
+  }
+  .fukidashi:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 0;
+    bottom: -19px;
+    margin-left: 10px;
+    border: solid transparent;
+    border-color: rgba(51, 204, 153, 0);
+    border-top-color: #3399ff;
+    border-width: 10px;
+    pointer-events: none;
+    content: " ";
+  }
+  .text:hover + .fukidashi {
+    display: block;
+  }
+
+  /*画像
+  ========================================*/
+  img{
+    object-fit: cover;
+    height:150px;
+    width:260px; 
+  }
+  #img1{
+   position: absolute;
+   top: 3px;
+   right: 250px;
+  }
+  #img2{
+    position: absolute;
+    top: 50px;
+    right: 0px;
+   }
+
+  /*フッター
+  ========================================*/
+  footer{
+    /*テキスト右揃え*/
+    text-align:right;
+}

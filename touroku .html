@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Touroku</title>
+    <link href="css/tourokuCSS.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <main>
+        <article>
+            <h1>新規登録</h1>
+            <form action="#" method="POST">
+                <label for="memberId">社員番号：&nbsp;
+                    <input type="text"name="memberId"id="memberId" placeholder="例:aB123456" required>
+                </label><br>
+                <label for="familyName">苗字（カナ）：&nbsp;
+                    <input type="text"name="familyName"id="familyName" placeholder="例:ナカムラ" required>
+                </label><br>
+                <label for="name">名前（カナ）：&nbsp;
+                    <input type="text"name="name"id="name" placeholder="例:ルリ" required>
+                </label><br>
+                <label for="bumon">部門：&nbsp;
+                    <select name="bumon"id="bumon" required>
+                        <option value="" selected>選択してください</option>
+                        <option value="eigyo">営業部</option>
+                        <option value="soumu">総務部</option>
+                        <option value="kenkyu">研究開発部</option>
+                    </select>
+                </label><br>
+                <label for="busho">部署：&nbsp;
+                    <select name="busho"id="busho" required>
+                        <option value="" selected>選択してください</option>
+                    </select>
+                </label><br>
+                <label for="password">パスワード：&nbsp;
+                    <input type="password" name="password"id="password" required>
+                </label><br>
+            </form>
+            <label><input id="check" type="checkbox">利用規約に同意する</label><br>
+            <input id="button" type="submit" value="登録" disabled>
+        </article>
+    </main>
+</body>
+</html>        

@@ -1,0 +1,109 @@
+@charset "utf-8";
+header{
+    /*headerの背景画像を設定*/
+    background-image: url("../headerbackground.jpg");
+    background-size: cover;/*画像のサイズを設定*/
+    width: 100%;/*横幅のサイズを設定*/
+    height: 250px;/*縦幅のサイズを設定*/
+    /*テキスト中央揃え*/
+    text-align: center;
+    /*フォントTimes Nes Romanに指定*/
+    font-family:'Times New Roman', Times, serif;
+    /*フォントカラーを白*/
+    color: aliceblue;
+}
+header h1
+{
+     /*上下外余白5px*/
+    margin: 5px 0px;
+    /*上下内余白　50px*/
+    padding:50px 0px 5px;
+    /*フォントサイズ50px*/
+    font-size:50px;
+}
+header p{
+    /*上下外余白5px*/
+    margin: 5px 0px;
+    /*上下内余白　5px*/
+    padding:5px ;
+    /*フォントサイズ30px*/
+    font-size:30px; 
+ }
+header a{
+   /*フォントサイズ20px*/
+   font-size:20px; 
+}
+#section1{
+    /*上外余白20px*/
+    margin-top: 20px;
+    /*外線*/
+    border: solid 1px black;
+    /*左右内余白　150px*/
+    padding:0px 150px;
+}
+#section1 p{
+    /*ボックスを横揃え*/
+    display:inline-block;
+    /*ボックスサイズを20%に統一*/
+    width: 20%;
+    /*テキスト中央揃え*/
+    text-align: center;
+    /*右外余白40px*/
+    margin-right: 20px;
+    /*左外余白40px*/
+    margin-left: 20px;
+    /*フォントサイズ13px*/
+    font-size: 13px;
+    /*フォント明朝体に指定*/
+    font-family:serif;
+}
+#section2{
+    /*上外余白20px*/
+    margin-top: 20px;
+    /*外線*/
+    border: solid 1px black;
+    /*左右内余白　150px*/
+    padding:0px 150px;
+    /*テキスト中央揃え*/
+    text-align: center;
+     /*フォントTimes Nes Romanに指定*/
+     font-family:'Times New Roman', Times, serif;
+}
+#section2 p{
+    /*ボックスを横揃え*/
+    display:inline-block;
+    /*ボックスサイズを20%に統一*/
+    width: 20%;
+    /*テキスト中央揃え*/
+    text-align: center;
+    /*右外余白40px*/
+    margin-right: 20px;
+    /*左外余白40px*/
+    margin-left: 20px;
+    /*フォントサイズ15px*/
+    font-size: 15px;
+    /*フォント明朝体に指定*/
+    font-family:serif;
+}
+#section3{
+     /*フォントTimes Nes Romanに指定*/
+     font-family:'Times New Roman', Times, serif;
+    /*上外余白20px*/
+    margin-top: 20px;
+    /*外線*/
+    border: solid 1px black;
+    /*テキスト中央揃え*/
+    text-align: center;
+}
+form{
+    /*テキスト左揃え*/
+    text-align:left;
+    /*左右内余白　40%*/
+    padding:0% 40%;
+    /*フォント明朝体に指定*/
+    font-family:serif;
+}
+footer{
+    /*テキスト右揃え*/
+    text-align:right;
+}

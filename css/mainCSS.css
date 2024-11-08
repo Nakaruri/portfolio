@@ -48,10 +48,8 @@ header a{
     width: 20%;
     /*テキスト中央揃え*/
     text-align: center;
-    /*右外余白40px*/
-    margin-right: 20px;
-    /*左外余白40px*/
-    margin-left: 20px;
+    /*上下外余白10px 左右外余白20px*/
+    margin:10px 20px;
     /*フォントサイズ13px*/
     font-size: 13px;
     /*フォント明朝体に指定*/

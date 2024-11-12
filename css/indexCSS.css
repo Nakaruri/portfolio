@@ -91,6 +91,11 @@ header a{
     /*フォント明朝体に指定*/
     font-family:serif;
     }
+    #section2 img{
+        border: solid 1px;
+        border-radius: 5%;
+        border-color: black 
+    }
 #section3{
      /*フォントTimes Nes Romanに指定*/
      font-family:'Times New Roman', Times, serif;

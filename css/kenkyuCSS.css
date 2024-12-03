@@ -82,7 +82,7 @@ article{
   border-radius: 5px;
   width: 650px;
   height: 230px;
-  font-size: 13px;
+  font-size: 15px;
 }
 .box-content2{
   background-color: #FFBEDA;
@@ -95,8 +95,10 @@ article{
 .box-content3{
   background-color: #C2EEFF;
   border-radius: 5px;
-  font-size: 13px;
+  font-size: 15px;
   text-align: left;
+  width: 800px;
+  height: 230px;
 }
 .content h2{
   text-decoration:underline;
